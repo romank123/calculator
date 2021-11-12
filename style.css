@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url('../fonts/MuseoSansCyrl100/MuseoSansCyrl100.eot');
+  src: url('../fonts/MuseoSansCyrl100/MuseoSansCyrl100.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl100/MuseoSansCyrl100.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl100/MuseoSansCyrl100.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url('../fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot');
+  src: url('../fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl300/MuseoSansCyrl300.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl300/MuseoSansCyrl300.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url('../fonts/MuseoSansCyrl500/MuseoSansCyrl500.eot');
+  src: url('../fonts/MuseoSansCyrl500/MuseoSansCyrl500.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl500/MuseoSansCyrl500.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl500/MuseoSansCyrl500.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'DigitalNumbers-Regular';
+  src: url('../fonts/DigitalNumbers-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MuseoSansCyrl';
+}
+
+body {
+  background: #e5e5e5;
+}
+
+.wrapper {
+  position: absolute;
+  width: 414px;
+  background: #f1f3f6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #373a37;
+}
+
+.digit {
+  font-family: 'DigitalNumbers-Regular';
+  background: linear-gradient(92.94deg, #cad4c5 0%, #b2bfa5 100%);
+  box-shadow: inset 0px 0px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-size: 40px;
+  line-height: 52px;
+  display: block;
+  align-items: center;
+  text-align: right;
+  color: #373a37;
+  padding: 22px;
+  position: relative;
+  height: 96px;
+  margin: 0.5rem;
+}
+
+.digit-display {
+  position: absolute;
+  padding: 22px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: 'DigitalNumbers-Regular';
+  opacity: 0.08;
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: calc(100% / 4 - 1rem);
+  height: 75px;
+  background: #f1f3f6;
+  box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px rgba(55, 84, 170, 0.1);
+  border-radius: 20px;
+  margin: 0.5rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 35px;
+  color: #3a4e89;
+  position: relative;
+}
+
+.double-btn {
+  flex-basis: 45.5%;
+}
+
+.bg-dark-blue {
+  background: #3a4e89;
+  color: #fff;
+}
+
+.btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn:active {
+  box-shadow: 1px 1px 10px #ffffff, 5px 5px 10px rgba(55, 84, 170, 0.1);
+}
+
+.btn:active span {
+  transform: translate(-45%, -45%);
+}
+
+input {
+  outline: none;
+  border: none;
+  width: -webkit-fill-available;
+  margin: 0.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+input,
+input:hover,
+input:focus {
+  outline: none;
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.clear {
+  background: #ff5050;
+  color: #fff;
+}

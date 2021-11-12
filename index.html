@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <span class="title">Calculator</span>
+        <!-- <div class="digit-display"></div> -->
+        <input
+          class="digit"
+          type="text"
+          min="0"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          type="number"
+          maxlength="9"
+          onkeydown="javascript: return ((event.keyCode>=8)&&(event.keyCode<=8))"
+        />
+
+        <div class="button">
+          <div class="btn clear" data-num="clear"><span>C</span></div>
+          <div class="btn ac" data-num="ac"><span>AC</span></div>
+          <div class="btn plusminus" data-num="+/-"><span>+/-</span></div>
+
+          <div class="btn division bg-dark-blue" data-num="/">
+            <span>/</span>
+          </div>
+          <div class="btn num" data-num="7"><span>7</span></div>
+          <div class="btn num" data-num="8"><span>8</span></div>
+          <div class="btn num" data-num="9"><span>9</span></div>
+          <div class="btn multi bg-dark-blue" data-num="*"><span>x</span></div>
+          <div class="btn num" data-num="4"><span>4</span></div>
+          <div class="btn num" data-num="5"><span>5</span></div>
+          <div class="btn num" data-num="6"><span>6</span></div>
+          <div class="btn minus bg-dark-blue" data-num="-"><span>-</span></div>
+          <div class="btn num" data-num="1"><span>1</span></div>
+          <div class="btn num" data-num="2"><span>2</span></div>
+          <div class="btn num" data-num="3"><span>3</span></div>
+          <div class="btn summ bg-dark-blue" data-num="+"><span>+</span></div>
+          <div class="btn num double-btn" data-num="0"><span>0</span></div>
+          <div class="btn dot" data-num="."><span>,</span></div>
+          <div class="btn equal bg-dark-blue" data-num="="><span>=</span></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
