@@ -14,3 +14,5 @@
 - HTML5
 - CSS3
 - Javascript
+
+![calculator](https://romank123.github.io/images/io-calculator.jpg)
